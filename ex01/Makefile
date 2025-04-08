@@ -6,11 +6,13 @@ CFLAGS = -Wall -Wextra -Werror -g -std=c++98 -I./includes -I./libs -Ofast
 SRC_DIR = ./srcs
 OBJS_DIR = ./objs
 OUTPUT_DIR ?= .
-NAME ?= megaphone
+NAME ?= phoneBook
 
 ###############    Files    ###############
 
-SRC_GENERAL =	megaphone \
+SRC_GENERAL =	main \
+				Contact \
+				PhoneBook \
 
 SRC	= $(addprefix $(SRC_DIR)/, $(addsuffix .cpp,	$(SRC_GENERAL) \
 ))
