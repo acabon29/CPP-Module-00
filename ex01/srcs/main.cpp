@@ -35,7 +35,7 @@ void setAttribute(PhoneBook *phoneBook, Contact *contact, std::string str,
 	std::string input;
 
 	do {
-		std::cout << str + " :" << std::endl;
+		std::cout << str << " :" << std::endl;
 		std::getline(std::cin, input);
 		if (std::cin.eof())
 			end_programme(phoneBook);
